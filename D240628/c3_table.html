@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+</head>
+
+<body>
+  <table border="1">
+    <!--표의 제목, 테이블 당 캡션 태그 권장-->
+    <caption>가격표</caption>
+    <!-- tr은 행, th,td는 열 -->
+    <col style="width: 70px;">
+    <colgroup span="2" style="width: 90px;"></colgroup>
+    <col style="width: 70px;">
+    <thead>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>총 금액</td>
+        <td></td>
+        <td>3개</td>
+        <td style="text-align:right;">5,600원</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>사이다</td>
+        <td>1개</td>
+        <td style="text-align:right;">2,000원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>환타</td>
+        <td>1개</td>
+        <td rowspan="2" style="text-align:right;">1,800원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>닥터페퍼</td>
+        <td>1개</td>
+        <!-- <td>1,800원</td> -->
+      </tr>
+    </tbody>
+
+  </table>
+  <br>
+  <table border="1">
+    <caption>성적표</caption>
+    <tr>
+      <th scope="col">구분</th>
+      <th scope="col">중간고사</th>
+      <th scope="col">기말고사</th>
+    </tr>
+    <tr>
+      <th scope="row">전공</th>
+      <td>B+</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <th scope="row">교양</th>
+      <td>C+</td>
+      <td>C0</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1">
+    <tr>
+      <th rowspan="2" scope="col">구분</th>
+      <th colspan="2" scope="colgroup">1학년</th>
+    </tr>
+    <tr>
+      <th>중간고사</th>
+      <th>기말고사</th>
+    </tr>
+    <tr>
+      <th scope="rowgroup" rowspan="2">전공</th>
+      <td>B+</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td>C+</td>
+      <td>C0</td>
+    </tr>
+  </table>
+</body>
+
+</html>

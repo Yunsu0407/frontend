@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UseSelector</title>
+  <style>
+    * {
+      color: black;
+    }
+
+    .titles {
+      color: red;
+    }
+
+    #residue {
+      color: skyblue;
+    }
+
+    dt {
+      color: blue;
+    }
+
+    .outer h1 {
+      color: rgb(75, 173, 26);
+    }
+
+    .outer>h1 {
+      color: blueviolet;
+    }
+
+    h2~h3 {
+      color: blue;
+    }
+
+    h2+h3 {
+      color: aqua;
+    }
+
+    #standard::before {
+      content: "choose before >"
+    }
+
+    #standard::after {
+      content: "> choose after"
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:active {
+      color: black;
+    }
+
+    input:focus {
+      color: red;
+    }
+
+    input:checked + label{
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <h1>프론트엔드 교육!</h1>
+    <div>
+      <h1>
+        열심히 해보자!
+      </h1>
+    </div>
+  </div>
+  <h1 class="titles">CSS란 무엇인가?</h1>
+  <p id="residue">CSS에 대해 알아보도록 하자</p>
+  <h2 class="titles">CSS 설명</h2>
+  <dl>
+    <dt>CSS</dt>
+    <dd>CSS는 Cascading Style Sheets의 약자입니다.</dd>
+  </dl>
+
+  <h1>사람1</h1>
+  <h2>사람2</h2>
+  <h3>사람3</h3>
+  <h3>사람4</h3>
+
+  <p id="standard">기준</p>
+
+  <a href="https://asdf.com">Never</a><br>
+  <a href="#">Ever</a><br><br>
+
+  <input type="text" placeholder="뭐라도 입력하시오."><br>
+  <br>
+  <input type="checkbox" checked>
+  <label>성별</label>
+</body>
+
+</html>

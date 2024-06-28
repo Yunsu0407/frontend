@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebPage form</title>
+</head>
+
+<body>
+  <form action="데이터 입력 서버 주소" method="전송 타입">
+    <label for="id1">ID1: </label><input type="text" id="id1"><br>
+    <label>ID2: <input type="text"></label><br>
+    <label for="id3">ID3: <input type="text" id="id3"></label><br>
+    <label for="ps">PS: </label><input type="password" id="ps"><br>
+    <input type="radio">
+  </form>
+
+  <form action="">
+    <fieldset>
+      <legend>필수 정보</legend>
+      <label>아이디: <input type="text"></label><br>
+      <label>패스워드: <input type="text"></label><br>
+    </fieldset><br>
+    <fieldset>
+      <legend>선택 정보</legend>
+      <label>성별: <input type="text"></label><br>
+      <label>나이: <input type="text"></label><br>
+    </fieldset><br>
+  </form>
+
+  <form action="">
+    <textarea name="" id=""></textarea><br>
+    <select name="" id="">
+      <optgroup label="성별">
+        <option value="male" selected>남</option> <!-- 전달되는 값은 value-->
+        <option value="female">여</option>
+      </optgroup>
+    </select><br><br>
+    <button>버튼1</button>
+    <button disabled>버튼2</button><br>
+    <input type="checkbox" checked>
+    <input type="checkbox">
+    <input type="checkbox"><br>
+
+    <input type="text" readonly placeholder="읽기 전용"><br>
+    <input type="text" maxlength="10" placeholder="최대 10글자 입력"><br>
+  </form>
+</body>
+
+</html>
