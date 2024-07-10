@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위치 속성으로 HTML 요소 배치하기</title>
+  <style>
+    body{
+      height: 5000px;
+    }
+    .box{
+      width: 70px;
+      height: 70px;
+    }
+    .red{
+      background-color: red;
+      position: fixed;
+      top: 300px;
+ }
+    .green{
+      background-color: green;
+      position: absolute;
+      left: 160px;
+      top: 78px;
+    }
+    .blue{
+      background-color: blue;
+      position: sticky;
+      top: 0px;
+    }
+    .black{
+      background-color: black;
+      position: relative;
+      left: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box - red"></div>
+  <div class="box - green"></div>
+  <div class="box - blue"></div>
+  <div class="box - black"></div>
+</body>
+
+</html>

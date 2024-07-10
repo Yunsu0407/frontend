@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전환 효과 속성 적용하기</title>
+  <style>
+    .box {
+      width: 70px;
+      height: 70px;
+      background-color: skyblue;
+      transition-property: background-color, width, height;
+      transition-timing-function: linear;
+      transition-duration: 1s, 1s, 1s;
+    }
+
+    .box:hover {
+      width: 140px;
+      height: 140px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
